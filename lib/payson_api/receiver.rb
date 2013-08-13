@@ -20,8 +20,6 @@ class Receiver
         hash.merge!({
           FORMAT_STRING % [index, 'email'] => receiver.email,
           FORMAT_STRING % [index, 'amount'] => receiver.amount,
-          FORMAT_STRING % [index, 'firstName'] => receiver.first_name,
-          FORMAT_STRING % [index, 'lastName'] => receiver.last_name,
           FORMAT_STRING % [index, 'primary'] => receiver.primary
         })
         if receiver.first_name
